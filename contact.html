@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Silkscreen|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|Rock+Salt">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <title>Contact Brittany!</title>
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="index.html"><img src="Nav Icons/Home Icon.png" alt="" class="icon"></a>
+            <a href="software.html">SOFTWARE</a>
+            <a href="3d.html">3D</a>
+            <a href="contact.html" class="selected">CONTACT</a>
+        </nav>
+
+        <div id="contact">
+            <h3>I'm currently seeking full-time opportunities to works as a Full Stack Developer or Staff Backend Engineer, and seasonal opportunities for drafting stage designs.</h3>
+            
+            <a href="https://drive.google.com/file/d/1yHfgRdrinGAcyV8-o070DPSToaqbp3oG/view?usp=sharing" style="font-family: 'Silkscreen'; font-size: small;" target="_blank">click here to review my resume</a>
+            
+            <p class="text">Please fill out this form to reach out to me for potential projects or career roles.</p>
+        
+            <form method="post" id="contact-form" target="hiddenConfirm" onsubmit="submitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSda0Vs9e5OYZyvH9ugcSe4CmdSK0wp5GZQhAzm_jwe92UEtbg/formResponse">
+
+                <fieldset>
+
+                    <p>Contact Info (required):</p>
+
+                    <label for="fn" id="form-field" class="text">First Name: <input type="text" name="entry.1772911939" id="" required></label>
+                    <label for="fn" id="form-field" class="text">Last Name: <input type="text" name="entry.1866883930" id="" required></label>
+                    <label for="em" id="form-field" class="text">Email: <input type="email" name="entry.1467586299" id="" required></label>
+                
+                </fieldset>
+
+                <fieldset>
+
+                    <p>Service of Interest (required):</p>
+
+                    <select name="entry.1944883850" id="service-options" class="text">
+                        <option value="">Select a service</option>
+                        <option value="">3D Design</option>
+                        <option value="">Software Development</option>
+                        <option value="">Both</option>
+                    </select>
+                      
+                </fieldset>
+
+                <fieldset>
+
+                    <p>Opportunity Type (required):</p>
+
+                    <select name="entry.794610440" id="opp-options" class="text">
+                        <option value="">Select a work type</option>
+                        <option value="">Full-Time</option>
+                        <option value="">Part-Time</option>
+                        <option value="">Seasonal Project</option>
+                    </select>
+                     
+                </fieldset>
+
+                <fieldset>
+                    <p>Scope Notes (optional):</p>
+                    <p class="text">Please provide any additional notes you would like to share about the scope of your inquiry.</p>
+                    <textarea name="entry.584907270" cols="30" rows="10" id="form-field" style="margin-top: 10px;" class="text"></textarea>
+                    <br>
+                    <button type="submit" id="form-field" name="submitButton">Submit</button>
+                </fieldset>
+
+            </form>
+
+        </div>
+
+        <script src="text/javascript">
+            var submitted = false;
+        </script>
+
+        <iframe 
+            name="hiddenConfirm" 
+            id="hiddenConfirm" 
+            style="display: none;"
+            onload="
+                if (submitted) {
+                    window.location='submission.html';
+                }">
+        </iframe>
+
+    </body>
+
+    <footer>
+        <p style="font-size: 8pt;">Follow me on:</p>
+        <a href="https://www.instagram.com/btheinfluence/" style="font-size: 8pt;" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/bthesolution/" style="font-size: 8pt;" target="_blank">Linkedin</a>
+        <a href="https://www.behance.net/brittanykarodee" style="font-size: 8pt;" target="_blank">Behance</a>
+       <p>© 2024 All Rights Reserved by B. Karodee</p>
+    </footer>
+
+</html>
