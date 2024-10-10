@@ -2,12 +2,7 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 60%;
-}
-
-#signature {
-    position: relative;
-    width: 7%;
+    width: 55%;
 }
 
 nav {
@@ -20,6 +15,7 @@ nav > a, footer > a {
     display: block;
     padding-bottom: 10%;
     font-family: 'Silkscreen';
+    z-index: 3;
 }
 
 body {
@@ -30,31 +26,35 @@ body {
 #project-img {
     width: 200px;
     height: 200px;
-    border-bottom: 3px solid black;
-    border-radius: 7px 7px 0px 0px;
+    /* border-bottom: 3px solid black; */
+    border-radius: 20px 20px 0px 0px;
     position: relative;
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 1;
+
 }
 
 #project-icon {
-    border: 3px solid black;
-    border-radius: 7px;
+    /* border: 3px solid black; */
+    box-shadow: 0px 1px 3px 1px rgb(171, 171, 171);
+    border-radius: 45px;
     width: 200px;
     height: 200px;
 }
 
 #tile {
-    border: 3px solid black;
-    border-radius: 10px;
+    /* border: 3px solid black; */
+    /* box-shadow: 1px 1px 20px 5px rgb(222, 222, 222); */
+    box-shadow: 0px 1px 3px 1px rgb(171, 171, 171);
+    border-radius: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     width: 200px;
     width: 200px;
     display: inline-block;
     background-color: white;
+   
 }
 
 .tile-info {
@@ -100,8 +100,10 @@ body {
 #gallery-img {
     width: 216px;
     height: 384px;
-    border: 3px solid black;
-    border-radius: 7px;
+    /* border: 3px solid black; */
+    /* box-shadow: 1px 1px 20px 5px rgb(222, 222, 222); */
+    box-shadow: 0px 1px 3px 1px rgb(171, 171, 171);
+    border-radius: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -136,17 +138,18 @@ body {
 #design-project-img {
     width: 400px;
     height: 400px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    /* box-shadow: 3px 3px 15px 1px rgb(186, 186, 186) ; */
+    box-shadow: 0px 1px 3px 1px rgb(171, 171, 171);
     border-radius: 7px;
 }
 
 #form-field {
     display: block;
-    padding-bottom: 5px;
 }
 
 fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     border: 0px;
 }
 
@@ -156,6 +159,8 @@ footer {
     left: 50px;
     color: grey;
     font-size: 6pt;
+    font-family: "Rock Salt", cursive;
+    font-size: 4pt;
 }
 
 #project-link {
@@ -175,7 +180,9 @@ a > img {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    /* box-shadow: 1px 1px 20px 5px rgb(222, 222, 222) ; */
+    box-shadow: 0px 1px 3px 1px rgb(171, 171, 171);
 /* Apply this margin, width and height formatting to the other page's main div sections. */
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +191,7 @@ a > img {
     width: 50%;
     height: 80%;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: antiquewhite;
     display: block;
 }
@@ -203,11 +210,6 @@ p[id="medium"] {
 
 div[id="languages"] > h3 {
     font-family: "Rock Salt", cursive;
-}
-
-footer {
-    font-family: "Rock Salt", cursive;
-    font-size: 4pt;
 }
 
 button {
@@ -245,8 +247,10 @@ button {
 }
 
 form {
-    border: 3px solid black;
-    border-radius: 7px;
+    /* border: 3px solid black; */
+    /* box-shadow: 1px 1px 20px 5px rgb(222, 222, 222) ; */
+    box-shadow: 0px 1px 3px 1px rgb(171, 171, 171);
+    border-radius: 20px;
     padding: 10px;
     width: 90%;
     background-color: aliceblue;
@@ -283,7 +287,7 @@ a:active {
     padding: 2px;
 }
 
-.home-icon-selected {
+.icon-selected {
     width: 30px;
     height: 30px;
     background-color: aquamarine;
@@ -291,7 +295,7 @@ a:active {
     padding: 2px;
 }
 
-.home-icon-selected:hover {
+.icon-selected:hover {
     width: 30px;
     height: 30px;
     background-color: fuchsia;
@@ -299,10 +303,181 @@ a:active {
     padding: 2px;
 }
 
-.home-icon-selected:active {
+.icon-selected:active {
     width: 30px;
     height: 30px;
     background-color: blueviolet;
     border-radius: 5px;
     padding: 2px;
+}
+
+#menu-icon {
+    display: none;
+}
+textarea {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        position: fixed;
+        display: inline-block;
+        background-color: #fafafa;
+        width: 100%;
+        height: 3rem;
+        left: 0px;
+        text-align: center;
+        padding-top: 1rem;
+        border-bottom: 3px solid black;
+        padding-bottom: 0%;
+        vertical-align: middle;
+        top: 0px;
+        z-index: 1
+    }
+
+    nav > a, footer > a {
+        display: inline-block;
+        font-family: 'Silkscreen';
+        padding-right: 10px;
+
+    }
+
+    nav > a {
+        vertical-align: middle;
+        line-height: 0%;
+    }
+
+    footer > a {
+       padding-bottom: 5px;
+    }
+
+    footer {
+        position: fixed;
+        left:0px;
+        padding:10px;
+        bottom: 0px;
+        width: 100%;
+        background-color: #fafafa;
+        border-top: 3px solid black;
+        padding-top: 0%;
+        line-height: 6pt;
+    }
+
+    #menu-text {
+        display: none;
+        line-height: 0%;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+
+    #footer-text {
+        display: none;
+    }
+
+    footer {
+        bottom: 0px;
+        width: 100%;
+    }
+    
+    footer > div > a {
+
+        display: inline-block;
+        position:inherit;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0px;
+        
+    }
+    footer > div > p[id="copyright"] {
+
+        float: right;
+        display: block;
+        margin-top: 1.75rem;
+        margin-bottom: 1rem;
+        padding-right: 5%;
+    }
+
+    footer > div {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer > div > a > img {
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
+    }
+
+   
+    #message {
+        /* These margin settings are going to be key for all content sections on the pages */
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8.5rem;
+        margin-bottom: 1.5rem;
+        padding: 10%;
+        height: 50%;
+        background-size: 95%;
+        font-size: 9pt;
+    }
+
+    #projects, #languages, #contact, #project-gallery {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #languages > h3 {
+        font-size: 9pt;
+        padding-left: 3px; 
+    }
+
+    #tile {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    #bubble {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        font-size: 6pt;
+    }
+
+    #design-project-img, #web-gallery-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        /* display: block; */
+        width: 100%;
+        height: 100%;
+    }
+
+    #img-tile {
+        display: block;
+        color: grey;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 5px;
+        margin-bottom: 50px;
+    }
+
+    .text-small {
+        font-size: 8pt;
+    }
+
+    #contact {
+        padding-top: 5rem;
+    }
 }
